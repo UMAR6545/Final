@@ -31,6 +31,9 @@ public class CalculatorTest {
 		
 	}
 	
+	/**
+	 * this test case skiiped due Out of range value
+	 */
 	public void testSquareSkipped(){
 		int res=cal.square(0);
 		assertEquals(0, res);
