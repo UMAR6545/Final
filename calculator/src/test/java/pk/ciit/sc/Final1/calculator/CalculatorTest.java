@@ -6,17 +6,17 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class CalculatorTest {
-	Calculator cal=new Calculator();
+	ICal cal=new Calculator();
 
 	@Test
 	public void testMax() {
 		int res=cal.findMax(1, 7, 6);
+		System.out.println("Test Case to   Find Max");
 		assertEquals(7, res);
 		
 	}
-	/**
-	 * this method could not find max values when all values are less than 0(<0)
-	 */
+	
+	@Ignore
 	@Test
 	public void testMaxFailtoFind() {
 		int res=cal.findMax(-1, -17, -16);
@@ -31,18 +31,18 @@ public class CalculatorTest {
 		
 	}
 	
-	/**
-	 * this test case skiiped due Out of range value
-	 */
+
 	public void testSquareSkipped(){
-		int res=cal.square(0);
+		int res=cal.square(-3);
 		assertEquals(0, res);
+		System.out.println("Test Case  Square");
 	}
 	
-	@Ignore
+	
 	@Test (expected = IllegalArgumentException .class)
 	public void testDevideException() throws IllegalArgumentException {
 		cal.square(15);
+		System.out.println("Test Case IllegalArgumentException ");
 		
 	}
 
