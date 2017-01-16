@@ -31,6 +31,11 @@ public class CalculatorTest {
 		
 	}
 	
+	public void testSquareSkipped(){
+		int res=cal.square(0);
+		assertEquals(0, res);
+	}
+	
 	@Ignore
 	@Test (expected = IllegalArgumentException .class)
 	public void testDevideException() throws IllegalArgumentException {

@@ -9,14 +9,9 @@ public class Calculator {
 	 * @param firstnumber
 	 * @param second number
 	 * @param third number
-	 * @return
+	 * @return  maximum number from given numbers
 	 */
-	/**
-	 * @param num1
-	 * @param num2
-	 * @param num3
-	 * @return
-	 */
+	
 	public int findMax(int num1, int num2, int num3) {
 		int[] arr = { num1, num2, num3 };
 		int max = 0;
@@ -29,7 +24,7 @@ public class Calculator {
 
 	/**
 	 * @param this method recive number to perform calculations for sequare
-	 * @return
+	 * @return calculte square
 	 * @throws IllegalArgumentException
 	 */
 	public int square(int num) throws IllegalArgumentException {
@@ -42,7 +37,7 @@ public class Calculator {
 	}
 	/**
 	 * @param this method recive number to perform calculations for cube
-	 * @return
+	 * @return calcuate the cube
 	 */
 	public int Cube(int num){
 		return num*num*num;
